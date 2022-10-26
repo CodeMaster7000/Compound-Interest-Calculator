@@ -6,7 +6,7 @@ A graphical compound interest calculator, coded using the Python Tkinter module.
 
 ## Useful Information
 
-In order to create a Tkinter:
+In order to create a Tkinter window:
 
 1. Import the tkinter module.
 2. Create the main window (container)
