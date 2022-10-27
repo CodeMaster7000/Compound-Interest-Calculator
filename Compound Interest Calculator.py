@@ -6,16 +6,16 @@ def clear_all() :
 	compound_field.delete(0, END)
 	principle_field.focus_set()
 
-def calculate_ci():
+def calculate_compoundinterest():
 	principle = int(principle_field.get())
 	rate = float(rate_field.get())
 	time = int(time_field.get())
-	CI = principle * (pow((1 + rate / 100), time))
-	compound_field.insert(10, CI)
+	compoundinterest = principle * (pow((1 + rate / 100), time))
+	compound_field.insert(10, compoundinterest)
 
 if __name__ == "__main__" :
 	root = Tk()
-	root.geometry("400x250")
+	root.geometry("310x250")
 	root.title("Compound Interest Calculator")
 	label1 = Label(root, text = "Principle Value",
 				fg = 'black', bg = 'orange')
@@ -45,7 +45,7 @@ if __name__ == "__main__" :
 	compound_field.grid(row = 5, column = 1, padx = 10, pady = 10)
 
 	button1 = Button(root, text = "Submit", bg = "orange",
-					fg = "black", command = calculate_ci)
+					fg = "black", command = calculate_compoundinterest)
 	button2 = Button(root, text = "Clear", bg = "orange",
 					fg = "black", command = clear_all)
 
