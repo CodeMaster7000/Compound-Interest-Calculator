@@ -1,15 +1,12 @@
 from tkinter import *
 def clear_all() :
-
 	principle_field.delete(0, END)
 	rate_field.delete(0, END)
 	time_field.delete(0, END)
 	compound_field.delete(0, END)
-
 	principle_field.focus_set()
 
 def calculate_ci():
-
 	principle = int(principle_field.get())
 	rate = float(rate_field.get())
 	time = int(time_field.get())
