@@ -2,7 +2,7 @@
 
 ## About
 
-A graphical compound interest calculator, coded using the Python Tkinter module.
+A graphical compound interest calculator, programmed with the Python GUI Tkinter module.
 
 ## Useful Information
 
